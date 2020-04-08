@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<robot name="$(arg ugv_name)" xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:include filename="$(find simulator)/urdf/component_snippets.xacro" />
+    <!-- Instantiate firefly "mechanics" -->
+    <xacro:include filename="$(find simulator)/urdf/quadruped.xacro" />
+
+    <xacro:camera_macro
+    namespace=""
+    parent_link="base_link"
+    camera_suffix="front"
+    frame_rate="30"
+    horizontal_fov="1.57"
+    image_width="640"
+    image_height="480"
+    image_format="R8G8B8"
+    min_distance="0.1"
+    max_distance="0"
+    noise_mean="0.0"
+    noise_stddev="0.0"
+    enable_visual="true">
+    <box size="0.02 0.02 0.02"/>
+    <origin xyz="0.14 0.0 0.02" rpy="0.0 0.0 0.0" />
+    </xacro:camera_macro>
+
+    <xacro:imu_macro
+    namespace=""
+    imu_suffix=""
+    parent_link="base_link"
+    imu_size="0.02"
+    imu_mass="0.03"
+    imu_topic="imu">
+    <origin xyz="0.0 0.0 0.08" rpy="0.0 0.0 0.0"/>
+    </xacro:imu_macro>
+
+    <xacro:lidar_macro
+    namespace=""
+    lidar_suffix="front"
+    parent_link="base_link"
+    lidar_size="0.05"
+    lidar_mass="0.03"
+    lidar_topic="lidar/front">
+    <origin xyz="0.14 0 -0.02" rpy="0.0 0.0 0.0"/>
+    </xacro:lidar_macro>
+
+    <xacro:lidar_macro
+    namespace=""
+    lidar_suffix="left"
+    parent_link="base_link"
+    lidar_size="0.05"
+    lidar_mass="0.03"
+    lidar_topic="lidar/left">
+    <origin xyz="0.0 0.14 -0.02" rpy="0.0 0.0 1.57"/>
+    </xacro:lidar_macro>
+
+    <xacro:lidar_macro
+    namespace=""
+    lidar_suffix="back"
+    parent_link="base_link"
+    lidar_size="0.05"
+    lidar_mass="0.03"
+    lidar_topic="lidar/back">
+    <origin xyz="-0.14 0.0 -0.02" rpy="0.0 0.0 3.14"/>
+    </xacro:lidar_macro>
+
+    <xacro:lidar_macro
+    namespace=""
+    lidar_suffix="right"
+    parent_link="base_link"
+    lidar_size="0.05"
+    lidar_mass="0.03"
+    lidar_topic="lidar/right">
+    <origin xyz="0.0 -0.14 -0.02" rpy="0.0 0.0 -1.57"/>
+    </xacro:lidar_macro>
+
+</robot>
