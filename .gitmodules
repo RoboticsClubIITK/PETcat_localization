@@ -1,0 +1,12 @@
+[submodule "DBoW2"]
+	path = DBoW2
+	url = https://github.com/shinsumicco/DBoW2.git
+[submodule "g2o"]
+	path = g2o
+	url = https://github.com/RainerKuemmerle/g2o.git
+[submodule "Pangolin"]
+	path = Pangolin
+	url = https://github.com/stevenlovegrove/Pangolin.git
+[submodule "openvslam"]
+	path = openvslam
+	url = https://github.com/isro01/openvslam
