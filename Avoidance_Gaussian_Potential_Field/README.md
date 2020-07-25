@@ -11,8 +11,6 @@ The main idea behind this method is to
 5. Calculate the attractive field from the yaw angle information from an inertial measurement unit (IMU).
 6. The total field is made of these two fields. Choose the angle with the minimum total field value.
 
-Work on the algorithm can be found [here](petcat-obstacle-avoidance-).
-
 The algorithm has been tested on a husky, the node for which can be found [here](random_explorer.cpp).
 
 ## Modules
