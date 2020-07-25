@@ -67,7 +67,7 @@ To test this on a quadruped we tried to stimulate the model we had using [towr](
 
 We had to modify the code to make our own node to publish the final pose for the quadruped to reach.
 
-![Image](img/towr_code,png)
+![Image](https://github.com/isro01/PETcat_localization/blob/document/img/towr_code.png)
 
 [Demo video can be found here](https://drive.google.com/open?id=1MN2vm95H1Dhfs8n3qlgd3xLlkyX3Nfzf
 )
