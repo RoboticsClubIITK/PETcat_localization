@@ -10,3 +10,9 @@
 [submodule "openvslam"]
 	path = openvslam
 	url = https://github.com/isro01/openvslam
+[submodule "ObstacleAvoidance_ODGPF/petcat-obstacle-avoidance-"]
+	path = ObstacleAvoidance_ODGPF/petcat-obstacle-avoidance-
+	url = https://github.com/adit-khokar/petcat-obstacle-avoidance-
+[submodule "Avoidance_Gaussian_Potential_Field/petcat-obstacle-avoidance-"]
+	path = Avoidance_Gaussian_Potential_Field/petcat-obstacle-avoidance-
+	url = https://github.com/adit-khokar/petcat-obstacle-avoidance-
